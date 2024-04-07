@@ -45,9 +45,7 @@ public class ipa2 {
                 result[result.length-1]=st[i];
             }
         }
-        Arrays.sort(result,0,result.length,(a,b)->a.getRollNo()-b.getRollNo()); 
-        //Obj sorting ASC wise as per rollno.
-        // DSC wise would be Arrays.sort(result,0,result.length,(a,b)->b.getRollNo()-a.getRollNo());
+        Arrays.sort(result,0,result.length,(a,b)->a.getRollNo()-b.getRollNo());
         return result.length>0 ? result : null;
     }
 }
